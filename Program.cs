@@ -10,6 +10,7 @@ namespace DbUnitTestDemo
     {
         static void Main(string[] args)
         {
+            // write your program here
         }
     }
 }
