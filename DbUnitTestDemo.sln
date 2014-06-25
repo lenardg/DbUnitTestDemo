@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUnitTestDemo", "DbUnitTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1C9E2B3D-7033-4915-AFEC-23F7D1F0003B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellExtensions", "PowerShellExtensions\PowerShellExtensions.csproj", "{93B345C9-16D5-42D3-A747-6B5ECC6C9576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1C9E2B3D-7033-4915-AFEC-23F7D1F0003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C9E2B3D-7033-4915-AFEC-23F7D1F0003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C9E2B3D-7033-4915-AFEC-23F7D1F0003B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B345C9-16D5-42D3-A747-6B5ECC6C9576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B345C9-16D5-42D3-A747-6B5ECC6C9576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B345C9-16D5-42D3-A747-6B5ECC6C9576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B345C9-16D5-42D3-A747-6B5ECC6C9576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
