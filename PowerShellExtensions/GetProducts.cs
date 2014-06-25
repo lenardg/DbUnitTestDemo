@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DbUnitTestDemo;
+using PowerShellExtensions.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace PowerShellExtensions
 
             var products = repo.GetProducts();
 
-            foreach (var prod in products)
+            foreach (var prod in products.ToList())
             {
                 WriteObject(Mapper.Map<ProductPSM>( prod ));
             }

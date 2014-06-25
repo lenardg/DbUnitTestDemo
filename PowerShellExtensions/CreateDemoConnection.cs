@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DbUnitTestDemo;
+using PowerShellExtensions.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -31,7 +32,7 @@ namespace PowerShellExtensions
                 return;
             }
 
-            string connectionString = string.Format("Data source={0};Initial catalog={1};Integrated Security=true",
+            string connectionString = string.Format("MultipleActiveResultSets=true;Data source={0};Initial catalog={1};Integrated Security=true",
                 Server, Database);
 
             var conn = DbProviderFactories.GetFactory("System.Data.SqlClient").CreateConnection();

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using DbUnitTestDemo;
 using PowerShellExtensions.Models;
 using System;
 using System.Collections.Generic;
@@ -10,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace PowerShellExtensions
 {
-    [Cmdlet(VerbsCommon.Add, "DemoProducts")]
-    public class AddProduct : Cmdlet
+    [Cmdlet(VerbsData.Update, "DemoProductPrice")]
+    public class UpdateProductPrice : Cmdlet
     {
-        [Parameter(Mandatory = true, Position = 0)]
-        public string Name { get; set; }
+        [Parameter(Mandatory = true, Position = 0, ValueFromPipeline = true)]
+        public ProductPSM Product { get; set; }
 
         [Parameter(Mandatory = true, Position = 1)]
         public decimal Price { get; set; }
@@ -29,17 +28,11 @@ namespace PowerShellExtensions
                 return;
             }
 
-            Product p = new Product()
-            {
-                Name = Name,
-                Price = Price
-            };
-
-            Registry.Entities.Products.Add(p);
+            var product = Registry.Entities.Products.Single(p => p.ProductId == Product.ProductId);
+            product.Price = Price;
             Registry.Entities.SaveChanges();
 
-            WriteObject(Mapper.Map<ProductPSM>(p));
+            WriteObject(Mapper.Map<ProductPSM>(product));
         }
-        
     }
 }
