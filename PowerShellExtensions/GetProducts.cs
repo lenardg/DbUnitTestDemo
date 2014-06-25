@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace PowerShellExtensions
 {
     [Cmdlet(VerbsCommon.Get, "DemoProducts")]
-    public class GetProducts : Cmdlet
+    public class GetProducts : PSCmdlet
     {
         protected override void ProcessRecord()
         {

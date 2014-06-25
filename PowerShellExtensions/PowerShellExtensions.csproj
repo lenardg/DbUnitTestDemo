@@ -62,7 +62,7 @@
     <Compile Include="Models\ProductPSM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\Registry.cs" />
-    <Compile Include="SetProductPrice.cs" />
+    <Compile Include="UpdateProductPrice.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DbUnitTestDemo\DbUnitTestDemo.csproj">

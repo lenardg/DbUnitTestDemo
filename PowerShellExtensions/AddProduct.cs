@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace PowerShellExtensions
 {
     [Cmdlet(VerbsCommon.Add, "DemoProducts")]
-    public class AddProduct : Cmdlet
+    public class AddProduct : PSCmdlet
     {
         [Parameter(Mandatory = true, Position = 0)]
         public string Name { get; set; }

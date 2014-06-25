@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace PowerShellExtensions
 {
     [Cmdlet(VerbsData.Update, "DemoProductPrice")]
-    public class UpdateProductPrice : Cmdlet
+    public class UpdateProductPrice : PSCmdlet
     {
         [Parameter(Mandatory = true, Position = 0, ValueFromPipeline = true)]
         public ProductPSM Product { get; set; }

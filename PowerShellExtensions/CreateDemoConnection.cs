@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace PowerShellExtensions
 {
     [Cmdlet(VerbsCommunications.Connect, "DemoConnection")]
-    public class CreateDemoConnection : Cmdlet
+    public class CreateDemoConnection : PSCmdlet
     {
         [Parameter(Mandatory = true, Position = 0)]
         public string Server { get; set; }
